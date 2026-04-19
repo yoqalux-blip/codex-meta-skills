@@ -1,26 +1,14 @@
 # Planning Workspace
 
-This folder holds local task-planning workspaces for the integrated Codex skill in this repository.
+This optional folder is a recommended layout for active task tracking when using `meta-project-workflow`.
 
 ## Layout
 
-- `active/`: current multi-step tasks
-- `archive/`: completed or paused task folders you still want to keep locally
+- `active/`: current tasks
+- `archive/`: completed or paused tasks
 
-## Recommended Task Files
-
-Each task folder under `active/` should contain:
+Each task folder under `active/` can contain:
 
 - `task_plan.md`
 - `findings.md`
 - `progress.md`
-
-## Quick Start
-
-Use the helper script from the repository root:
-
-```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\.codex\skills\meta-project-workflow\scripts\init-planning-files.ps1 -TaskSlug your-task
-```
-
-This folder is meant for local working memory. Active task contents are ignored by git unless you intentionally move them elsewhere.

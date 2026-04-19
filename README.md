@@ -45,6 +45,7 @@
 - `.codex/skills/meta-project-workflow/templates/progress.md`
 - `.codex/skills/meta-project-workflow/scripts/init-planning-files.ps1`
 - `docs/meta_project_workflow_skill_bilingual_2026-04-20.md`
+- `docs/upstream-origins.md`
 
 ## 计划文件布局
 

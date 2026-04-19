@@ -1,11 +1,8 @@
-# Local planning workspace
+Thumbs.db
+.DS_Store
+.vscode/
 .planning/active/*
 .planning/archive/*
 !.planning/README.md
 !.planning/active/.gitkeep
 !.planning/archive/.gitkeep
-
-# OS / editor
-Thumbs.db
-.DS_Store
-.vscode/

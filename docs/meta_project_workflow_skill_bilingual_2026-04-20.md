@@ -8,10 +8,10 @@ This repository now includes a local Codex skill that integrates the most useful
 - `planning-with-files`
 - `ralph-loop`
 
-The integrated skill lives at:
+The packaged skill is defined at:
 
 ```text
-.codex/skills/meta-project-workflow/
+SKILL.md
 ```
 
 Its goal is to fit a practical Windows + Codex workflow without depending on Claude-only hooks or open-ended autonomous loops.
@@ -76,12 +76,12 @@ Each task folder should contain:
 
 This keeps planning state local and organized without polluting the repository root.
 
-## Quick Start In This Repository
+## Quick Start In A Project
 
-From the repository root:
+From a working project root:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\.codex\skills\meta-project-workflow\scripts\init-planning-files.ps1 -TaskSlug your-task
+powershell -NoProfile -ExecutionPolicy Bypass -File "$HOME\.codex\skills\meta-project-workflow\scripts\init-planning-files.ps1" -TaskSlug your-task
 ```
 
 Then:
@@ -94,7 +94,7 @@ Then:
 
 ## Chinese Guide
 
-当前仓库已经内置一个面向 Codex 的本地 skill，用来整合三个外部技能中最实用的部分。
+这个技能包提供了一个面向 Codex 的本地 skill，用来整合三个外部技能中最实用的部分。
 
 核心思路是：
 
@@ -102,7 +102,7 @@ Then:
 - `planning-with-files` 负责“把长任务过程写进文件，避免上下文丢失”
 - `ralph-loop` 负责“只对可验证的小任务做有限重试”
 
-在当前仓库中，推荐把复杂任务都放到：
+在实际项目中，推荐把复杂任务都放到：
 
 ```text
 .planning/active/<task-slug>/
@@ -120,10 +120,10 @@ Then:
 - 研究和代码工作可以放在同一套流程里
 - 排错时不容易重复试错
 - 不需要依赖 Claude 专属 hooks
+- 在重大决策前回读计划可以减少目标漂移
 
 ## Related Files
 
-- Skill definition: `.codex/skills/meta-project-workflow/SKILL.md`
-- Chinese guide: `.codex/skills/meta-project-workflow/references/zh-cn-guide.md`
-- Review checklist: `.codex/skills/meta-project-workflow/references/review-checklist.md`
-- Planning workspace note: `.planning/README.md`
+- Skill definition: `SKILL.md`
+- Chinese guide: `references/zh-cn-guide.md`
+- Source mapping: `references/upstream-origins.md`
