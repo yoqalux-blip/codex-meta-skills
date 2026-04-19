@@ -1,11 +1,11 @@
 ---
 name: meta-project-workflow
-description: Use for multi-step coding, research, debugging, or project-organizing work in this Codex workspace. Creates persistent planning files under .planning/, applies systematic debugging, and uses bounded retry loops only for machine-verifiable subtasks.
+description: Use for multi-step coding, research, debugging, or project-organizing work in a Codex workspace. Creates persistent planning files under .planning/, applies systematic debugging, and uses bounded retry loops only for machine-verifiable subtasks.
 ---
 
 # Meta Project Workflow
 
-This skill adapts the most useful parts of `superpowers`, `planning-with-files`, and `ralph-loop` for the current Codex on Windows workflow.
+This skill adapts the most useful parts of `superpowers`, `planning-with-files`, and `ralph-loop` for Codex on Windows and similar local workflows.
 
 Use it when the task is likely to take more than 5 tool calls, span multiple phases, or require reliable resumption later.
 
@@ -45,7 +45,7 @@ This keeps the project root clean while preserving long-running task state.
 
 1. If a relevant folder already exists under `.planning/active/`, read its `task_plan.md`, `findings.md`, and `progress.md` before doing substantial work.
 2. If no planning folder exists and the task is complex, create one using the templates in `templates/` or the PowerShell helper in `scripts/init-planning-files.ps1`.
-3. Write a short goal, a phased plan, and success checks before starting implementation.
+3. Write a short goal, a phased plan, success checks, and the current phase before starting implementation.
 
 ## Core Workflow
 
@@ -116,6 +116,7 @@ Rules:
 
 - always define a clear stop condition
 - always cap retries, usually 3 to 5 rounds
+- record the stop condition, max rounds, and verification command in `task_plan.md` before starting the loop
 - log each round briefly in `progress.md`
 - if the cap is reached, stop and summarize instead of looping forever
 

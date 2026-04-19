@@ -14,7 +14,7 @@ The integrated skill lives at:
 .codex/skills/meta-project-workflow/
 ```
 
-Its goal is to fit the current Windows + Codex workflow used in this repository without depending on Claude-only hooks or open-ended autonomous loops.
+Its goal is to fit a practical Windows + Codex workflow without depending on Claude-only hooks or open-ended autonomous loops.
 
 ## What Was Kept From Each Source
 
@@ -84,8 +84,9 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\.codex\skills\meta-project
 Then:
 
 1. write the task goal and success checks in `task_plan.md`
-2. record key evidence and research findings in `findings.md`
-3. keep a short running session log in `progress.md`
+2. set the current phase and verification command in `task_plan.md`
+3. record key evidence and research findings in `findings.md`
+4. keep a short running session log in `progress.md`
 
 ## Chinese Guide
 

@@ -8,6 +8,11 @@ param(
 )
 
 $taskSlugSafe = $TaskSlug.Trim().ToLower()
+$taskSlugSafe = [regex]::Replace($taskSlugSafe, "\s+", "-")
+$invalidChars = [System.IO.Path]::GetInvalidFileNameChars()
+$taskSlugSafe = -join ($taskSlugSafe.ToCharArray() | Where-Object { $_ -notin $invalidChars })
+$taskSlugSafe = [regex]::Replace($taskSlugSafe, "-{2,}", "-").Trim("-",".")
+
 if (-not $taskSlugSafe) {
     throw "TaskSlug cannot be empty."
 }
