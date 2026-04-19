@@ -23,6 +23,8 @@
 - 排错时坚持小步验证和系统化调试
 - 只对可验证子任务做有限重试，不做无限自循环
 - 明确记录停止条件、最大轮数和验证方式
+- 在重大决策前回读计划，减少任务漂移
+- 在动大改动前先列出涉及文件或工作面
 
 ## 仓库结构
 
@@ -37,6 +39,7 @@
 
 - `.codex/skills/meta-project-workflow/SKILL.md`
 - `.codex/skills/meta-project-workflow/references/zh-cn-guide.md`
+- `.codex/skills/meta-project-workflow/references/review-checklist.md`
 - `.codex/skills/meta-project-workflow/templates/task_plan.md`
 - `.codex/skills/meta-project-workflow/templates/findings.md`
 - `.codex/skills/meta-project-workflow/templates/progress.md`
@@ -57,6 +60,7 @@
 - `findings.md`
 - `progress.md`
 - `task_plan.md` 里建议同时写当前阶段、验证命令和有限重试计划
+- `findings.md` 里建议记录 working examples、recent changes 和可疑差异
 
 ## 初始化命令
 

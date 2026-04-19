@@ -7,6 +7,7 @@
 - Goal for this session:
 - Current phase:
 - Actions taken:
+- Evidence gathered:
 - Files changed:
 - Verification:
 - Retry round used (if any):

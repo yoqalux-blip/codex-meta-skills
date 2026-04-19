@@ -14,6 +14,10 @@
 
 - 
 
+## Files Or Work Surfaces In Scope
+
+- 
+
 ## Current Phase
 
 - 1. Scope and context

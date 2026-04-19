@@ -23,6 +23,7 @@ Its goal is to fit a practical Windows + Codex workflow without depending on Cla
 Kept:
 
 - start with a plan before major edits
+- map likely files or surfaces before implementation
 - use systematic debugging instead of random retries
 - define verification before calling a task done
 
@@ -38,6 +39,8 @@ Kept:
 - persistent task memory on disk
 - separation between plan, findings, and progress
 - better resumption across long or interrupted sessions
+- re-read the plan before major decisions to reduce drift
+- write important observations to disk after small bursts of reading
 
 Not carried over directly:
 
@@ -84,9 +87,10 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\.codex\skills\meta-project
 Then:
 
 1. write the task goal and success checks in `task_plan.md`
-2. set the current phase and verification command in `task_plan.md`
-3. record key evidence and research findings in `findings.md`
-4. keep a short running session log in `progress.md`
+2. map the files or work surfaces in scope
+3. set the current phase and verification command in `task_plan.md`
+4. record key evidence and research findings in `findings.md`
+5. keep a short running session log in `progress.md`
 
 ## Chinese Guide
 
@@ -121,4 +125,5 @@ Then:
 
 - Skill definition: `.codex/skills/meta-project-workflow/SKILL.md`
 - Chinese guide: `.codex/skills/meta-project-workflow/references/zh-cn-guide.md`
+- Review checklist: `.codex/skills/meta-project-workflow/references/review-checklist.md`
 - Planning workspace note: `.planning/README.md`
