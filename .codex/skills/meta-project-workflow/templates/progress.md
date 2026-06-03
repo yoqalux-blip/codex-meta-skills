@@ -10,5 +10,8 @@
 - Evidence gathered:
 - Files changed:
 - Verification:
-- Retry round used (if any):
+- Retry round used, if any:
+- Attestation status:
+- Visible Codex plan status:
+- Manuscript section or claim IDs touched:
 - Next step:
